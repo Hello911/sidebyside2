@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/mainView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/buttonBar">
+        <!--The separator view in the middle with 0 width-->
+        <View
+            android:id="@+id/vertical_divider"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true" />
+
+        <!--The left half-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/vertical_divider">
+            <ImageView
+                android:id="@+id/photo1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="matrix"
+                android:src="@drawable/materialdesign2" />
+            <in.goodiebag.carouselpicker.CarouselPicker
+                android:id="@+id/data1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:items_visible="three"
+                android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+        <!--The right half-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/vertical_divider">
+            <ImageView
+                android:id="@+id/photo2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="matrix"
+                android:src="@drawable/materialdesign2" />
+            <in.goodiebag.carouselpicker.CarouselPicker
+                android:id="@+id/data2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:items_visible="three"
+                android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true">
+
+            <!--The landscape roller at the top-->
+            <in.goodiebag.carouselpicker.CarouselPicker
+                android:id="@+id/carouselLandscape"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:items_visible="three" />
+
+            <!--This portrait mode roller is here to prevent NullPointerException with a different ID-->
+            <in.goodiebag.carouselpicker.CarouselPicker
+                android:visibility="invisible"
+                android:id="@+id/carousel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:items_visible="three" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <!--The button bar-->
+    <LinearLayout
+        android:id="@+id/buttonBar"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="@color/magenta">
+        <ImageView
+            android:id="@+id/save_collage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_download"
+            android:layout_marginBottom="10dp"/>
+        <ImageView
+            android:id="@+id/share_collage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_share"
+            android:layout_marginBottom="10dp"/>
+        <ImageView
+            android:id="@+id/calculateDifference"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_done"
+            android:layout_marginBottom="10dp"/>
+
+        <ImageView
+            android:id="@+id/rotatePhoto1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_rotate"
+            android:layout_marginBottom="10dp"/>
+        <ImageView
+            android:id="@+id/rotatePhoto2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_rotate"
+            android:layout_marginBottom="10dp"/>
+        <ImageView
+            android:id="@+id/selectPhoto1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_selectphoto"
+            android:layout_marginBottom="10dp"/>
+        <ImageView
+            android:id="@+id/selectPhoto2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_selectphoto"
+            android:layout_marginBottom="10dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <ImageView
+        android:id="@+id/shutter"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_shutter"
+        android:layout_margin="10dp"
+        android:tint="@color/magenta"/>
+
+    <ImageView
+        android:id="@+id/gallery"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_selectphotolarge"
+        android:layout_margin="17dp"
+        android:tint="@color/magenta"/>
+
+    <ImageView
+        android:id="@+id/edit"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignRight="@+id/gallery"
+        android:layout_above="@+id/gallery"
+        android:src="@drawable/ic_edit"
+        android:tint="@color/magenta"/>
+
+    <ImageView
+        android:id="@+id/reload"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_reload"
+        android:layout_margin="17dp"
+        android:tint="@color/magenta"/>
+
+</RelativeLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/materialdesign"
+        android:scaleType="centerCrop"/>
+    <TextView
+        android:id="@+id/photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2Photos"
+        android:textSize="60dp"
+        android:textColor="#FFF"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Side By Side"
+        android:textSize="60dp"
+        android:layout_below="@+id/photo"
+        android:textColor="#FFF"/>
+
+    <Button
+        android:id="@+id/setting"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:text="setting"
+        android:textSize="25dp"
+        android:drawableLeft="@drawable/ic_setting"
+        android:onClick="redirect"
+        android:layout_marginBottom="5dp"
+        android:theme="@style/PrimaryButton"
+        android:layout_above="@+id/photo2"
+        android:layout_alignLeft="@+id/center"/>
+
+    <Button
+        android:id="@+id/photo2"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:text="photo"
+        android:textSize="25dp"
+        android:drawableLeft="@drawable/ic_selectphoto"
+        android:onClick="redirect"
+        android:layout_marginBottom="5dp"
+
+        android:theme="@style/PrimaryButton"
+        android:layout_above="@+id/center"
+        android:layout_alignLeft="@+id/center"/>
+    <View
+        android:id="@+id/center"
+        android:layout_width="200dp"
+        android:layout_height="0dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"/>
+    <Button
+        android:id="@+id/compare"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:text="compare"
+        android:textSize="25dp"
+        android:drawableLeft="@drawable/ic_twophotos"
+        android:onClick="redirect"
+        android:theme="@style/PrimaryButton"
+        android:layout_alignLeft="@+id/center"
+        android:layout_below="@+id/center"/>
+    <Button
+        android:id="@+id/folder"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:text="camera"
+        android:textSize="25dp"
+        android:drawableLeft="@drawable/ic_camera"
+        android:onClick="redirect"
+        android:theme="@style/PrimaryButton"
+        android:layout_alignLeft="@+id/center"
+        android:layout_below="@+id/compare"/>
+
+</RelativeLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Compare">
+    <item android:id="@+id/rotatePhoto1"
+        android:icon="@drawable/ic_rotate"
+        android:title="Rotate photo 1"
+        app:showAsAction="ifRoom"/>
+
+    <item android:id="@+id/rotatePhoto2"
+        android:icon="@drawable/ic_rotate"
+        android:title="Rotate photo 2"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/selectPhoto1"
+        android:icon="@drawable/ic_selectphoto"
+        android:title="Select photo 1"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/selectPhoto2"
+        android:icon="@drawable/ic_selectphoto"
+        android:title="Select photo 2"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/done"
+        android:icon="@drawable/ic_done"
+        android:title="Compare data"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/download"
+        android:icon="@drawable/ic_download"
+        android:title="Save/share collage"
+        app:showAsAction="ifRoom"/>
+
+</menu>

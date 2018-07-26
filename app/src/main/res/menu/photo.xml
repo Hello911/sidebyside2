@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <item android:id="@+id/selectPhoto"
+        android:icon="@drawable/ic_selectphoto"
+        android:title="Select photo"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/seeComment"
+        android:icon="@drawable/ic_comment"
+        android:title="See comment"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/editExif"
+        android:icon="@drawable/ic_edit"
+        android:title="Edit data"
+        app:showAsAction="always"/>
+</menu>
